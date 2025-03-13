@@ -1,0 +1,159 @@
+:root{
+    --text-color: hsl(30, 17%, 93%);
+    --bg-color: hsl(26, 17%, 8%);
+    --bg2-color: hsl(26, 17%, 12%);
+    --primary-color: hsl(39,88%,60%);
+    --secondary-color: hsl(120,17%,32%);
+    --secondary-accent-color: hsl(120, 17%, 20%);
+    --accent-color: hsl(154, 28%, 42%);
+    --font-small: 0.875em;
+    --font-normal: 1em;
+    --font-big: 1.125em;
+    --font-bigger: 1.25em;
+    --font-biggest: 1.5em;
+}
+
+.lightmode{
+    --text-color: hsl(30, 17%, 7%);
+    --bg-color: hsl(26,17%,92%);
+    --bg2-color: hsl(26,17%, 88%);
+    --primary-color: hsl(39,88%,40%);
+    --secondary-color: hsl(120, 17%, 68%);
+    --secondary-accent-color: hsl(120, 17%, 80%);
+    --accent-color: hsl(154,28%,58%);
+}
+*{
+    user-select: none;
+    font-family: "Inter", sans-serif
+}
+h1, h2, h3, p, span, a{
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    border: none;
+    text-decoration: none;
+}
+a{
+    color: var(--primary-color)
+}
+body{
+    margin: 0px;
+    height: 100%;
+    background-color: var(--bg-color);
+}
+.navigation{
+    position: sticky;
+    top: 0px;
+    display: flex;
+    flex-direction: row-reverse;
+    column-gap: 100px;
+    padding: 30px;
+    padding-inline-end: 100px;
+    background-color: var(--bg2-color);
+
+}
+
+.navp{
+    color: var(--primary-color);
+    height: fit-content;
+    transition: background-color 0.2s ease-in;
+    padding: 8px;
+    border-radius: 0.725em;
+    line-height: 1em;
+    font-size: var(--font-big);
+}
+.navp.active{
+    text-decoration: underline;
+}
+
+.navp:not(.active):hover{
+
+    background-color: var(--secondary-color);
+}
+.navp:not(.active):active{
+    background-color: var(--secondary-accent-color)
+}
+
+
+.center{
+    margin: auto;
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+
+.textbox{
+    width: 80%;
+    padding: 5% 10% 5% 10%;
+    height: 200px;
+    border-radius: 0.5em;
+}
+.textbox h3{
+    color: var(--text-color);
+    font-size: var(--font-biggest);
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+.textbox p{
+    line-height: 25px;
+    color: var(--text-color);
+    font-size: var(--font-small);
+    font-weight: 450;
+}
+
+
+yellow{
+    color: #f3c823;
+}
+
+
+
+.image{
+    width: 200px; 
+    height: 200px; 
+    border-radius: 45px;
+}
+
+
+
+.row-center{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+button{
+    display: none;
+}
+.buttons{
+    display: none;
+}
+
+
+/* Phones */
+@media only screen and (max-width: 600px) {
+    :root{
+        --font-small: 0.5em;
+        --font-normal: 0.875;
+        --font-big: 1em;
+        --font-bigger: 1.125em;
+        --font-biggest: 1.25em;
+    }
+    .navigation{
+        column-gap: 40px;
+        padding-inline-end: 10px;
+    }
+    .textbox{
+        width: 80%;
+        height: fit-content;
+    }
+    .center{
+        width: 70%;
+    }
+    .image{
+        width: 100px;
+        height: 100px;
+    }
+}
