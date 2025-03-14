@@ -12,6 +12,21 @@
     --font-bigger: 1.25em;
     --font-biggest: 1.5em;
 }
+pink{
+    color: rgb(218, 56, 83);
+}
+primary{
+    color: var(--primary-color)
+}
+secondary{
+    color: var(--secondary-color)
+}
+accent{
+    color: var(--accent-color)
+}
+yellow{
+    color: #f3c823;
+}
 
 .lightmode{
     --text-color: hsl(30, 17%, 7%);
@@ -26,7 +41,7 @@
     user-select: none;
     font-family: "Inter", sans-serif
 }
-h1, h2, h3, p, span, a{
+h1, h2, h3, h4, p, span, a{
     margin: 0;
     padding: 0;
     color: var(--text-color);
@@ -35,6 +50,9 @@ h1, h2, h3, p, span, a{
 }
 a{
     color: var(--primary-color)
+}
+.indent{
+    text-indent: 1.5em;
 }
 body{
     margin: 0px;
@@ -63,6 +81,7 @@ body{
     font-size: var(--font-big);
 }
 .navp.active{
+    pointer-events: none;
     text-decoration: underline;
 }
 
@@ -78,7 +97,7 @@ body{
 .center{
     margin: auto;
     width: 50%;
-    height: 100vh;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     row-gap: 40px;
@@ -87,7 +106,7 @@ body{
 .textbox{
     width: 80%;
     padding: 5% 10% 5% 10%;
-    height: 200px;
+    height: fit-content;
     border-radius: 0.5em;
 }
 .textbox h3{
@@ -102,13 +121,11 @@ body{
     font-size: var(--font-small);
     font-weight: 450;
 }
-
-
-yellow{
-    color: #f3c823;
+.textbox h4{
+    font-size: var(--font-big);
+    margin-bottom: 0.5em;
+    font-weight:  550;
 }
-
-
 
 .image{
     width: 200px; 
@@ -131,6 +148,47 @@ button{
     display: none;
 }
 
+
+
+.gameList{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    padding: 0% 5% 0% 5%;
+    height: 600px;
+}
+.game:first-child{
+    width: 600px;
+}
+.game{
+    width: 300px;
+}
+.one::before{
+    font-size: 4em;
+    content: '1';
+    color: var(--text-color)
+}
+.two::before{
+    font-size: 3em;
+    content: '2';
+    color: var(--text-color)
+}
+.three::before{
+    font-size: 3em;
+    content: '3';
+    color: var(--text-color)
+}
+.four::before{
+    font-size: 2em;
+    content: '4';
+    color: var(--text-color)
+}
+.five::before{
+    font-size: 2em;
+    content: '5';
+    color: var(--text-color)
+}
 
 /* Phones */
 @media only screen and (max-width: 600px) {

@@ -4,8 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>about me</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h3>about me...</h3>
+    <div class="navigation">
+        <label class="row-center" for="themetoggle">
+            <svg id="themeicon" viewBox="0 0 24 24" fill="none" height="20px" width="20px"xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M3.32031 11.6835C3.32031 16.6541 7.34975 20.6835 12.3203 20.6835C16.1075 20.6835 19.3483 18.3443 20.6768 15.032C19.6402 15.4486 18.5059 15.6834 17.3203 15.6834C12.3497 15.6834 8.32031 11.654 8.32031 6.68342C8.32031 5.50338 8.55165 4.36259 8.96453 3.32996C5.65605 4.66028 3.32031 7.89912 3.32031 11.6835Z" stroke="#F0EDEA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+        </label>
+        <a href="/"class="navp">home</a>
+        <a href="/" class="navp">portfolio</a>
+        <a href="https://www.isaacf.me/about" class="navp active">about me</a>
+    </div>
+
+    <div class="center">
+        <div class="textbox">
+            <h3>Origins, Past, and the Future</h3>
+            <p>I was born on May 2nd,  2006 making me <primary>18</primary> years old. 
+                I was born in New York City and I continued living in America till I was 8 years old, and in 2014 I moved to Berlin, Germany 🥨</p>
+            <p>I spent my high school years in Berlin, and in April of 2025 I will start my studies at the Technische Universität München</p>
+        </div>
+        <div class="textbox">
+            <h3>A little bit about me!</h3>
+            <p class="indent">Ever since I was a little kid I have been fascinated by computers. According to my dad, he found notes with IP addresses written down by me when I was 6 years old. 
+                I'm one of those people that  has always known what they want to do, which I am indubitably grateful for. Due to my obsession with computers, my childhood was inextricably intertwined with the digital world. My gateway into technology was my dad's extremely old windows laptop, then a DS from my dad, 
+                a WII from my mom, a 3DS, Xbox 360, a PS3, a Macbook, a PS4, an iMac, a Switch, and much more inbetween. Finally I landed on the ultimate form of computer: the <primary>desktop</primary>. I actually have had two desktops, but the first one I gave to one of my childhood friends, 
+                and the one I use now is a <strong>BEAST</strong> of a computer. Packed with: 32gb of ram, a  ryzen 9 3900x, an m.2 ssd, and a rtx 3080, my younger self would've been stunned by the sight of such a beautiful machine. As you can see I always had access to the stronges technology of the time, and therefore invested much of my time in playing video games.
+                 </p>
+                 <br>
+                 <h4>Video Games</h4>
+                 <p class="indent"> Video games are probably my favorite example of computer programming. Video games easily leave their closest ancestor (board games) in the dust. No doubt. I have been playing all sorts of video games since I was 6 years old. So I figured I know a thing or two about them.
+                     Therefore I'll give you a list of my 5 favorite video games of all time. </p>
+        </div>
+        <div class="gameList">
+            <div class="game">
+                <div class="imageHolder one" style="width: 25%;display: flex; flex-direction: row; justify-content:  space-between; margin-bottom: 1em;">
+                    <img style="width: 70px;"src="../images/minecraft.svg" alt="">
+                </div>
+                <p>Minecraft, perhaps the most well knwon game ever, holds a special place in my heart. </p>
+              
+            </div>
+            <div class="two game">
+                <p>Terraria</p>
+            </div>
+            <div class="three game">
+                <p>Castle Crashers</p>
+            </div>
+            <div class="four game">
+                <p>Splatoon</p>
+            </div>
+            <div class="five game">
+                <p>Rust</p>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button id="themetoggle"></button>
+        </div>
+    </div>
+    <script src="../jquery.js"></script>
+    <script src="about.js"></script>
+    <script src="../toggle.js"></script>
+   
 </body>
 </html>
