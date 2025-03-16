@@ -4,6 +4,7 @@
     --bg2-color: hsl(26, 17%, 12%);
     --primary-color: hsl(39,88%,60%);
     --secondary-color: hsl(120,17%,32%);
+    --secondary-html-color: hsl(120 17% 60%);
     --secondary-accent-color: hsl(120, 17%, 20%);
     --accent-color: hsl(154, 28%, 42%);
     --font-small: 0.875em;
@@ -19,7 +20,7 @@ primary{
     color: var(--primary-color)
 }
 secondary{
-    color: var(--secondary-color)
+    color: var(--secondary-html-color)
 }
 accent{
     color: var(--accent-color)
@@ -34,12 +35,22 @@ yellow{
     --bg2-color: hsl(26,17%, 88%);
     --primary-color: hsl(39,88%,40%);
     --secondary-color: hsl(120, 17%, 68%);
+    --secondary-html-color: hsl(120 17% 50%);
     --secondary-accent-color: hsl(120, 17%, 80%);
     --accent-color: hsl(154,28%,58%);
 }
 *{
     user-select: none;
     font-family: "Inter", sans-serif
+}
+.nopadding{
+    padding: 0 !important;
+}
+.small{
+    font-size: var(--font-small);
+}
+.fwsmall{
+    font-weight: 250 !important;
 }
 h1, h2, h3, h4, p, span, a{
     margin: 0;
@@ -100,7 +111,7 @@ body{
     height: fit-content;
     display: flex;
     flex-direction: column;
-    row-gap: 40px;
+    row-gap: 20px;
 }
 
 .textbox{
@@ -116,25 +127,47 @@ body{
     margin-bottom: 1em;
 }
 .textbox p{
+    padding: 20px;
     line-height: 25px;
     color: var(--text-color);
     font-size: var(--font-small);
     font-weight: 450;
 }
 .textbox h4{
+    width: fit-content;
     font-size: var(--font-big);
     margin-bottom: 0.5em;
     font-weight:  550;
 }
 
 .image{
-    width: 200px; 
+    width: fit-content; 
     height: 200px; 
-    border-radius: 45px;
+    border-radius: 35px;
+}
+.sport-icons{
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+}
+.sport-icons path{
+    fill: var(--text-color);
+}
+.hover-accent:hover{
+    transition: color 0.15s ease-in;
+    color: var(--accent-color);
+}
+.hover-primary:hover{
+    transition: color 0.15s ease-in;
+    color: var(--primary-color);
 }
 
 
 
+.col{
+    display: flex;
+    flex-direction: column;
+}
 .row-center{
     display: flex;
     flex-direction: row;
@@ -144,35 +177,69 @@ body{
 button{
     display: none;
 }
+.buttonLabel{
+    margin-left: 10%;
+    width: fit-content;
+    color: var(--bg-color);
+    background-color: var(--primary-color);
+    padding: 0.6em 3em 0.6em 3em;
+    border-radius: 0.75em;
+    transition: transform 0.2s ease-in, box-shadow 0.3s ease-in;
+}
+.buttonLabel:hover{
+    box-shadow: 0 20px 80px -10px var(--primary-color);
+    transform: translateY(-4px);
+}
+.buttonLabel:active{
+    transform: translateY(0);
+}
 .buttons{
     display: none;
 }
 
+.textseparator{
+    padding-bottom: 0.5em;
+    transition: padding 0.5s ease-in-out;
+}
+.textseparator:hover{
+    padding-bottom: 0px;
+}
+.textseparator p{
+    padding-top: 0;
+    padding-bottom: 0;
+    transition: padding 0.5s ease-in-out;
+}
+.textseparator:hover p{
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
 
 
 
 
 
 .gameList.in{
-    visibility: visible;
+    pointer-events: all;
     opacity: 1;
+    height: 800px;
+    transition: opacity 0.6s ease-in 0.3s, height 0.6s ease-in;
 
 }
 .gameList{
-    visibility: hidden;
-    opacity: 0;
+    pointer-events: none;
     display: flex;
+    opacity: 0;
     flex-direction: row;
     flex-wrap: wrap;
     width: 90%;
     padding: 0% 10% 10% 10%;
-    height: fit-content;
+    height: 0;
     column-gap: 20px;
-    transition: opacity 0.6s ease-in;
+    transition: opacity 0.6s ease-in , height 0.6s ease-in 0.3s;
 }
 .game{
 
-    width: 300px;
+    width: 350px;
     margin-bottom: 1.5em;
 }
 .game p{
@@ -182,24 +249,29 @@ button{
 .one::before{
     font-size: 4em;
     content: '1';
+    font-weight: 600;
     color: #FFd700
 }
 .two::before{
     font-size: 3em;
     content: '2';
+    font-weight: 500;
     color: #C0C0C0
 }
 .three::before{
     font-size: 3em;
     content: '3';
+    font-weight: 400;
     color: #CD7f32
 }
 .four::before{
+    font-weight: 300;
     font-size: 2em;
     content: '4';
     color: var(--text-color)
 }
 .five::before{
+    font-weight: 300;
     font-size: 2em;
     content: '5';
     color: var(--text-color)
@@ -226,7 +298,10 @@ button{
         width: 70%;
     }
     .image{
-        width: 100px;
+        width: fit-content;
         height: 100px;
+    }
+    .imageHolder.one{
+        width: 75% !important;
     }
 }
