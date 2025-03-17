@@ -291,10 +291,12 @@ button{
         padding-inline-end: 10px;
     }
     .textbox{
-        width: 80%;
+        width: 100%;
         height: fit-content;
+        padding: 0px;
     }
     .center{
+        align-items: center;
         width: 70%;
     }
     .image{
@@ -303,5 +305,11 @@ button{
     }
     .imageHolder.one{
         width: 75% !important;
+    }
+    .buttonLabel{
+        margin-left: 0px;
+    }
+    .gameList.in{
+        height: 900px;
     }
 }
