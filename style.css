@@ -221,7 +221,7 @@ button{
 .gameList.in{
     pointer-events: all;
     opacity: 1;
-    height: 800px;
+    height: 1100px;
     transition: opacity 0.6s ease-in 0.3s, height 0.6s ease-in;
 
 }
