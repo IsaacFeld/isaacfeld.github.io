@@ -17,6 +17,7 @@
     --font-bigger: 1.25em;
     --font-biggest: 1.375em;
 }
+
 .lightmode{
     --text-color: hsl(30,17%, 45%);
     --text-highlight: hsl(30,17%,25%);
