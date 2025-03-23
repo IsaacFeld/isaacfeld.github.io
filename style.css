@@ -216,7 +216,7 @@ alert.out{
     align-items: center;
 }
 .image{
-    width: fit-content; 
+    width: 200px; 
     height: 200px; 
     border-radius: 35px;
 }
