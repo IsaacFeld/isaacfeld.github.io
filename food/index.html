@@ -19,21 +19,183 @@
         <a href="/food" class="navp active">food</a>
     </div>
     <div class="center">
-        <div class="textbox">
+        <div class="textbox" style="padding-bottom: 0px">
             <h3>Isaac's Food Blog</h3>
-            <p>Welcome to my food blog! <br>Here you'll find food I have eaten at restauraunts, food I have cooked, and maybe a recipe or two that I am willing to share :)</p>
+            <p>Welcome to my food blog! <br>Here you'll find food I have eaten at restaurants, food I have cooked, and maybe a recipe or two that I am willing to share :)</p>
         </div>
-        <searchbox>
-            <div class="row-center" style="justify-content: space-between;">
-                <input type="text" class="searchbar clean">
-                <search>
-                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M11 6C13.7614 6 16 8.23858 16 11M16.6588 16.6549L21 21M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
-                </search>
-            </div>
-       
-        </searchbox>
+        <div class="textbox" style="padding-top: 0px; padding-bottom: 0px;">
+            <searchbox>
+                <div class="row-center searchbar" style="column-gap: 10px;">
+                    <search>
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M11 6C13.7614 6 16 8.23858 16 11M16.6588 16.6549L21 21M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                    </search>
+                    <input id="food-search" type="text" class="clean" autocomplete="off" >
+                </div>
+           
+            </searchbox>
+        </div>
         <searchresult>
-            
+            <a href="/food/kai-maison">
+                <article>
+                    <div class="row-center between">
+                        <div class="row-center betwen" style="column-gap: 10px;">
+                            <if-title>Kai Maison</if-title>
+               
+                        </div>
+              
+                        <location> <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g clip-path="url(#clip0_429_11046)"> <rect x="12" y="11" width="0.01" height="0.01" stroke="#292929" stroke-width="3.75" stroke-linejoin="round"></rect> <path d="M12 22L17.5 16.5C20.5376 13.4624 20.5376 8.53757 17.5 5.5C14.4624 2.46244 9.53757 2.46244 6.5 5.5C3.46244 8.53757 3.46244 13.4624 6.5 16.5L12 22Z" stroke="#292929" stroke-width="2.5" stroke-linejoin="round"></path> </g> <defs> <clipPath id="clip0_429_11046"> <rect width="24" height="24" fill="white"></rect> </clipPath> </defs> </g></svg> Maybachufer 23, 12047 Berlin</location>
+                    </div>
+                    <div class="row-center tagContainer">
+                        <tag>restaurant</tag>
+                        <tag>neukölln</tag>
+                        <tag>fusion</tag>
+                    </div>
+                    <if-subtitle>A review of a particularly fancy and delectable restaurant in the heart of Berlin</if-subtitle>
+                </article>
+            </a>
+            <a href="/food/november-brasserie">
+                <article>
+                    <div class="row-center between">
+                        <div class="row-center betwen" style="column-gap: 10px;">
+                            <if-title>NOVEMBER Brasserie</if-title>
+                        </div>
+              
+                        <location> <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g clip-path="url(#clip0_429_11046)"> <rect x="12" y="11" width="0.01" height="0.01" stroke="#292929" stroke-width="3.75" stroke-linejoin="round"></rect> <path d="M12 22L17.5 16.5C20.5376 13.4624 20.5376 8.53757 17.5 5.5C14.4624 2.46244 9.53757 2.46244 6.5 5.5C3.46244 8.53757 3.46244 13.4624 6.5 16.5L12 22Z" stroke="#292929" stroke-width="2.5" stroke-linejoin="round"></path> </g> <defs> <clipPath id="clip0_429_11046"> <rect width="24" height="24" fill="white"></rect> </clipPath> </defs> </g></svg> 
+                            Husemannstraße 15, 10435 Berlin</location>
+                    </div>
+                    <div class="row-center tagContainer">
+                        <tag>restaurant</tag>
+                        <tag>pankow</tag>
+                        <tag>japanese</tag>
+                    </div>
+                    <if-subtitle>A review of an extravagant japanese seafood restaurant in Prenzlauer Berg</if-subtitle>
+                </article>
+            </a>
+            <a href="/food/vino-e-cucina">
+                <article>
+                    <div class="row-center between">
+                        <div class="row-center betwen" style="column-gap: 10px;">
+                            <if-title>Vino e Cucina</if-title>
+                        </div>
+              
+                        <location> <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g clip-path="url(#clip0_429_11046)"> <rect x="12" y="11" width="0.01" height="0.01" stroke="#292929" stroke-width="3.75" stroke-linejoin="round"></rect> <path d="M12 22L17.5 16.5C20.5376 13.4624 20.5376 8.53757 17.5 5.5C14.4624 2.46244 9.53757 2.46244 6.5 5.5C3.46244 8.53757 3.46244 13.4624 6.5 16.5L12 22Z" stroke="#292929" stroke-width="2.5" stroke-linejoin="round"></path> </g> <defs> <clipPath id="clip0_429_11046"> <rect width="24" height="24" fill="white"></rect> </clipPath> </defs> </g></svg> 
+                            Kreuzbergstraße 77, 10965 Berlin</location>
+                    </div>
+                    <div class="row-center tagContainer">
+                        <tag>restaurant</tag>
+                        <tag>kreuzberg</tag>
+                        <tag>italian</tag>
+                    </div>
+                    <if-subtitle>A cozy & tasty Italian restaurant in one of my favorite Berlin neighborhoods, Kreuzberg</if-subtitle>
+                </article>
+            </a>
+            <a href="/food/magic-johns-pizza">
+                <article>
+                    <div class="row-center between">
+                        <div class="row-center betwen" style="column-gap: 10px;">
+                            <if-title>Magic John's Pizza</if-title>
+                        </div>
+              
+                        <location> <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g clip-path="url(#clip0_429_11046)"> <rect x="12" y="11" width="0.01" height="0.01" stroke="#292929" stroke-width="3.75" stroke-linejoin="round"></rect> <path d="M12 22L17.5 16.5C20.5376 13.4624 20.5376 8.53757 17.5 5.5C14.4624 2.46244 9.53757 2.46244 6.5 5.5C3.46244 8.53757 3.46244 13.4624 6.5 16.5L12 22Z" stroke="#292929" stroke-width="2.5" stroke-linejoin="round"></path> </g> <defs> <clipPath id="clip0_429_11046"> <rect width="24" height="24" fill="white"></rect> </clipPath> </defs> </g></svg> 
+                            Oranienburger Str. 48, 10117 Berlin</location>
+                    </div>
+                    <div class="row-center tagContainer">
+                        <tag>italian</tag>
+                        <tag>pizza</tag>
+                        <tag>take-out</tag>
+                    </div>
+                    <if-subtitle>Coming from a real New Yorker: Magic John's Pizza is truly the only authentic New York style pizza place in Berlin</if-subtitle>
+                </article>
+            </a>
+            <a href="/food/bobbe">
+                <article>
+                    <div class="row-center between">
+                        <div class="row-center betwen" style="column-gap: 10px;">
+                            <if-title>Bobbe</if-title>
+                        </div>
+              
+                        <location> <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g clip-path="url(#clip0_429_11046)"> <rect x="12" y="11" width="0.01" height="0.01" stroke="#292929" stroke-width="3.75" stroke-linejoin="round"></rect> <path d="M12 22L17.5 16.5C20.5376 13.4624 20.5376 8.53757 17.5 5.5C14.4624 2.46244 9.53757 2.46244 6.5 5.5C3.46244 8.53757 3.46244 13.4624 6.5 16.5L12 22Z" stroke="#292929" stroke-width="2.5" stroke-linejoin="round"></path> </g> <defs> <clipPath id="clip0_429_11046"> <rect width="24" height="24" fill="white"></rect> </clipPath> </defs> </g></svg> 
+                            Motzstraße 91, 10779 Berlin</location>
+                    </div>
+                    <div class="row-center tagContainer">
+                        <tag>restaurant</tag>
+                        <tag>israeli</tag>
+                    </div>
+                    <if-subtitle>An excellent Israeli restaurant with outstanding hummus and plenty of fresh steaming-hot pitas</if-subtitle>
+                </article>
+            </a>
+            <a href="/food/efes">
+                <article>
+                    <div class="row-center between">
+                        <div class="row-center betwen" style="column-gap: 10px;">
+                            <if-title>Efes</if-title>
+                        </div>
+              
+                        <location> <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g clip-path="url(#clip0_429_11046)"> <rect x="12" y="11" width="0.01" height="0.01" stroke="#292929" stroke-width="3.75" stroke-linejoin="round"></rect> <path d="M12 22L17.5 16.5C20.5376 13.4624 20.5376 8.53757 17.5 5.5C14.4624 2.46244 9.53757 2.46244 6.5 5.5C3.46244 8.53757 3.46244 13.4624 6.5 16.5L12 22Z" stroke="#292929" stroke-width="2.5" stroke-linejoin="round"></path> </g> <defs> <clipPath id="clip0_429_11046"> <rect width="24" height="24" fill="white"></rect> </clipPath> </defs> </g></svg> 
+                            Teltower Damm 42, 14167 Berlin</location>
+                    </div>
+                    <div class="row-center tagContainer">
+                        <tag>döner</tag>
+                        <tag>take-out</tag>
+                        <tag>fast food</tag>
+                    </div>
+                    <if-subtitle>The most legendary and reliable Döner shop in Zehlendorf, a perfect conclusion to a night out</if-subtitle>
+                </article>
+            </a>
+            <a href="/food/humble-pie">
+                <article>
+                    <div class="row-center between">
+                        <div class="row-center betwen" style="column-gap: 10px;">
+                            <if-title>Humble Pie</if-title>
+                        </div>
+              
+                        <location> <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g clip-path="url(#clip0_429_11046)"> <rect x="12" y="11" width="0.01" height="0.01" stroke="#292929" stroke-width="3.75" stroke-linejoin="round"></rect> <path d="M12 22L17.5 16.5C20.5376 13.4624 20.5376 8.53757 17.5 5.5C14.4624 2.46244 9.53757 2.46244 6.5 5.5C3.46244 8.53757 3.46244 13.4624 6.5 16.5L12 22Z" stroke="#292929" stroke-width="2.5" stroke-linejoin="round"></path> </g> <defs> <clipPath id="clip0_429_11046"> <rect width="24" height="24" fill="white"></rect> </clipPath> </defs> </g></svg> 
+                            Reuterstraße 57, 12047 Berlin</location>
+                    </div>
+                    <div class="row-center tagContainer">
+                        <tag>restaurant</tag>
+                        <tag>fast food</tag>
+                        <tag>american</tag>
+                    </div>
+                    <if-subtitle>My favorite fried chicken spot in Berlin, the chicken is always packed with flavor </if-subtitle>
+                </article>
+            </a>
+            <a href="/food/burgermeister">
+                <article>
+                    <div class="row-center between">
+                        <div class="row-center betwen" style="column-gap: 10px;">
+                            <if-title>Burgermeister - am Zoo</if-title>
+                        </div>
+              
+                        <location> <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g clip-path="url(#clip0_429_11046)"> <rect x="12" y="11" width="0.01" height="0.01" stroke="#292929" stroke-width="3.75" stroke-linejoin="round"></rect> <path d="M12 22L17.5 16.5C20.5376 13.4624 20.5376 8.53757 17.5 5.5C14.4624 2.46244 9.53757 2.46244 6.5 5.5C3.46244 8.53757 3.46244 13.4624 6.5 16.5L12 22Z" stroke="#292929" stroke-width="2.5" stroke-linejoin="round"></path> </g> <defs> <clipPath id="clip0_429_11046"> <rect width="24" height="24" fill="white"></rect> </clipPath> </defs> </g></svg> 
+                            Bhf Zoo, Joachimsthaler Str. 1-3, 10623 Berlin</location>
+                    </div>
+                    <div class="row-center tagContainer">
+                        <tag>fast food</tag>
+                        <tag>burgers</tag>
+                        <tag>american</tag>
+                    </div>
+                    <if-subtitle>Cheap, quick, tasy, and open till 4 a.m. on weekends making it the perfect spot for a midnight snack</if-subtitle>
+                </article>
+            </a>
+            <a href="/food/chicago-williams">
+                <article>
+                    <div class="row-center between">
+                        <div class="row-center betwen" style="column-gap: 10px;">
+                            <if-title>Chicago Williams BBQ</if-title>
+                        </div>
+              
+                        <location> <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g clip-path="url(#clip0_429_11046)"> <rect x="12" y="11" width="0.01" height="0.01" stroke="#292929" stroke-width="3.75" stroke-linejoin="round"></rect> <path d="M12 22L17.5 16.5C20.5376 13.4624 20.5376 8.53757 17.5 5.5C14.4624 2.46244 9.53757 2.46244 6.5 5.5C3.46244 8.53757 3.46244 13.4624 6.5 16.5L12 22Z" stroke="#292929" stroke-width="2.5" stroke-linejoin="round"></path> </g> <defs> <clipPath id="clip0_429_11046"> <rect width="24" height="24" fill="white"></rect> </clipPath> </defs> </g></svg> 
+                            Marburger Str. 16, 10789 Berlin</location>
+                    </div>
+                    <div class="row-center tagContainer">
+                        <tag>restaurant</tag>
+                        <tag>barbeque</tag>
+                        <tag>american</tag>
+                    </div>
+                    <if-subtitle>A meat eater's paradise which specializes in american bbq & comfort food, featuring the tastiest pastrami sandwich in Berlin</if-subtitle>
+                </article>
+            </a>
         </searchresult>
         <footer>
             <alert id="discordalert"> Copied discord username to clipboard!</alert>
