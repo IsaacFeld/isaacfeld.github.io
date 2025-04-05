@@ -10,6 +10,7 @@
     --secondary-accent-color: hsl(120, 17%, 20%);
     --accent-color: hsl(154, 28%, 42%);
     --color-yellow: hsl(48, 90%, 55%);
+    --rose-color: #ee4e6a;
     --font-smallest: 0.750em;
     --font-small: 0.875em;
     --font-normal: 1em;
@@ -29,9 +30,41 @@
     --secondary-html-color: hsl(120 17% 50%);
     --secondary-accent-color: hsl(120, 17%, 80%);
     --accent-color: hsl(154, 28%, 58%);
-    --color-yellow: hsl(48, 90%, 45%)
+    --color-yellow: hsl(48, 90%, 45%);
+    --rose-color: #741c2b;
 }
+tully{
 
+    height: 75px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 40px;
+    transition: width 0.15s ease-in;
+}
+tully primary{
+    margin-top: 25px;
+}
+tully:hover primary{
+    margin: 0px;
+}
+tully:hover::before{
+    align-self: center;
+    color: var(--rose-color);
+    content: '♡';
+    animation: 2s infinite normal hearts linear;
+
+}
+tully:hover::after{
+    align-self: center;
+    opacity: 0;
+    content: '♡';
+    color: var(--rose-color);
+    animation: 2s infinite normal hearts-under linear 1s;
+    animation-fill-mode: none, forwards;
+  
+}
 pink {
     color: rgb(218, 56, 83);
 }
@@ -39,7 +72,9 @@ pink {
 primary {
     color: var(--primary-color)
 }
-
+rose{
+    color: var(--rose-color)
+}
 secondary {
     color: var(--secondary-html-color)
 }
@@ -254,7 +289,10 @@ alert.out {
     display: flex;
     flex-direction: column;
 }
-
+.row{
+    display: flex;
+    flex-direction: row;
+}
 .row-center {
     display: flex;
     flex-direction: row;
@@ -268,7 +306,12 @@ alert.out {
 .between{
     justify-content: space-between;
 }
-
+.sticky{
+    position: sticky;
+    background-color: var(--bg-color);
+    top: 0px;
+    left: 0px;
+}
 .image {
     width: 200px;
     height: 200px;
@@ -558,6 +601,7 @@ foodpage .center{
 foodpage .textbox p{
     padding-top: 1em;
     padding-bottom: 1em;
+    font-size: 16px;
 }
 .back{
     align-self: start;
@@ -586,6 +630,27 @@ foodpage .textbox p{
 }
 foodpage tag{
     align-self: end;
+}
+.slide-left{
+    animation: 1s 1 normal slide-in-left ease-out;
+}
+.slide-right{
+    animation: 1s 1 normal slide-in-right ease-out;
+}
+.slide-down{
+    animation: 1s 1 normal slide-in-down ease-out;
+}
+.slide-up{
+    animation: 1s 1 normal slide-in-up ease-out;
+}
+.img-300{
+    min-width: 340px; max-width: 340px; padding: 20px; max-height: 600px;
+}
+.img-400{
+    min-width: 440px; max-width: 440px; padding: 20px; max-height: 600px;
+}
+section, html{
+    scroll-behavior: smooth;
 }
 
 /* Phones */
@@ -647,5 +712,93 @@ foodpage tag{
     }
     100%{
         transform: translateX(60vw);
+    }
+}
+@keyframes slide-in-left{
+    0%{
+        opacity: 0;
+        translate: -150px
+    }
+    70%{
+        opacity: 1
+    }
+    100%{
+      
+        translate: none
+    }
+}
+@keyframes slide-in-right{
+    0%{
+        opacity: 0;
+        translate: 150px
+    }
+    70%{
+        opacity: 1
+    }
+    100%{
+      
+        translate: none
+    }
+}
+@keyframes slide-in-up{
+    0%{
+        opacity: 0;
+        translate: 0px 150px
+    }
+    70%{
+        opacity: 1
+    }
+    100%{
+      
+        translate: none
+    }
+}
+@keyframes slide-in-down {
+    0%{
+        opacity: 0;
+        translate: 0px -150px
+    }
+    70%{
+        opacity: 1
+    }
+    100%{
+      
+        translate: none
+    }
+}
+@keyframes hearts{
+    0%{
+        color: #58131e;
+        translate: 0px 20px;
+        transform: rotate(0deg)
+        translateX(30px) rotate(0deg)
+    }
+    50%{
+        color: #ee4d6a
+    }
+    100%{
+        color: #58131e;
+        translate: 0px 20px;
+        transform: rotate(-360deg)
+        translateX(30px) rotate(360deg)
+    }
+}
+@keyframes hearts-under{
+    0%{
+        color: #58131e;
+        translate: 0px -20px;
+        transform: rotate(0deg)
+        translateX(30px) rotate(0deg);
+        opacity: 1;
+    }
+    50%{
+        color: #ee4d6a
+    }
+    100%{
+        color: #58131e;
+        translate: 0px -20px;
+        transform: rotate(-360deg)
+        translateX(30px) rotate(360deg);
+        opacity: 1;
     }
 }

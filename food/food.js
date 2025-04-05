@@ -1,5 +1,4 @@
 $('searchresult')[0].style.height = `${$('searchresult')[0].children.length * 200}px`
-
 $('#food-search')[0].oninput = function(){
     isaacSearch(this.value)
 }
