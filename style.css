@@ -1,3 +1,5 @@
+/* https://www.realtimecolors.com/?colors=f0edea-181411-f3b43f-445f44-4d896f&fonts=Inter-Inter */
+
 :root {
     --text-color: hsl(30, 17%, 55%);
     --text-highlight: hsl(30, 17%, 75%);
@@ -648,6 +650,10 @@ foodpage tag{
 }
 .img-400{
     min-width: 440px; max-width: 440px; padding: 20px; max-height: 600px;
+}
+.img-wide{
+    max-height: 600px;
+    padding: 20px;
 }
 section, html{
     scroll-behavior: smooth;
