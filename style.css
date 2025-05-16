@@ -201,6 +201,8 @@ body {
     font-weight: 550;
 }
 
+
+
 footer {
     min-height: 15px;
     align-items: center;
@@ -300,6 +302,9 @@ alert.out {
     flex-direction: row;
     align-items: center;
 }
+.justCent{
+    justify-content: center;
+}
 .row-start {
     display: flex;
     flex-direction: row;
@@ -313,11 +318,6 @@ alert.out {
     background-color: var(--bg-color);
     top: 0px;
     left: 0px;
-}
-.image {
-    width: 200px;
-    height: 200px;
-    border-radius: 35px;
 }
 
 .hover-accent:hover {
@@ -645,23 +645,25 @@ foodpage tag{
 .slide-up{
     animation: 1s 1 normal slide-in-up ease-out;
 }
-.img-300{
-    min-width: 340px; max-width: 340px; padding: 20px; max-height: 600px;
-}
-.img-400{
-    min-width: 440px; max-width: 440px; padding: 20px; max-height: 600px;
-}
-.img-wide{
-    max-height: 600px;
-    padding: 20px;
-}
 section, html{
     scroll-behavior: smooth;
 }
 
+.imageContainer{
+    width: 600px;
+}
+.image{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.aboutImage{
+    width: 200px; 
+}
 /* Phones */
 @media only screen and (max-width: 600px) {
     :root {
+        --font-smallest: 0.45em;
         --font-small: 0.5em;
         --font-normal: 0.875em;
         --font-big: 1em;
@@ -669,25 +671,107 @@ section, html{
         --font-biggest: 1.25em;
     }
 
+    .imageContainer{
+    width: 400px;
+    }
+    .image{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .aboutImage{ 
+        width: 100px;
+    }
+
+    searchbox{
+        padding: 0px;
+        width: 100%;
+    }
+
+    .searchbar{
+        width: 100%;
+    }
+    searchresult{
+        width: 100%;
+        margin-left: 0px;
+        padding: 0px;
+        row-gap: 1em;
+    }
+    searchresult a{
+        height: 120px;
+    }
+    article{
+        height: 120px;
+        row-gap: 2px;
+        padding: 0px;
+    }
+    article .row-center.between{
+        flex-direction: column;
+    }
+    article .tagContainer{
+        justify-content: center;
+    }
+    if-subtitle{
+        text-align: center;
+    }
+    article location{
+        height: 30px;
+    }
+    tag{
+        width: 50px;
+        height: 20px;
+        padding: 6px;
+    }
+    header h1{
+        margin-left: 10px;
+        margin-right: 5px;
+        font-size: 0.75em;
+    }
+    .sticky{
+        top: 0px;
+    }
+    foodpage .reviewDataContainer{
+        margin-top: 1em;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 0.5em;
+    }
+    foodpage .reviewDataContainer h3{
+        align-self: center  !important;
+    }
+    foodpage .tagContainer{
+        height: 30px !important;
+    }
+    foodpage .ratingContainer div{
+        min-width: 100px;
+    }
+    foodpage .textbox p{
+        font-size: var(--font-normal);
+    }
+    .back{
+        align-self: center;
+        width: 30px;
+    }
     .navigation {
         column-gap: 40px;
         padding-inline-end: 10px;
+    }
+    .navp{
+        width: fit-content;
+        height: fit-content;
+        text-wrap-mode: nowrap;
     }
 
     .textbox {
         width: 100%;
         height: fit-content;
+
         padding: 0px;
     }
 
     .center {
         align-items: center;
         width: 70%;
-    }
-
-    .image {
-        width: 100px;
-        height: 100px;
     }
 
     .imageHolder.one {
@@ -720,6 +804,7 @@ section, html{
         transform: translateX(60vw);
     }
 }
+/*
 @keyframes slide-in-left{
     0%{
         opacity: 0;
@@ -772,6 +857,7 @@ section, html{
         translate: none
     }
 }
+*/
 @keyframes hearts{
     0%{
         color: #58131e;
