@@ -38,9 +38,39 @@ $('#discord')[0].addEventListener('click', () =>{
             $('#discordalert')[0].style.display = "none"
       }, 200)
     }, 1000)
-
-
-
-
-
 })
+
+
+function handle_hamburger(){
+    console.log('hello')
+    if(!$('#nav-menu')[0].classList.contains('disabled')){
+        setTimeout(() => {
+
+        $('#nav-menu')[0].classList.remove('disabled')
+        }, 400)
+        if($('hamburger-menu')[0].classList.contains('in')){
+            $('hamburger-menu')[0].classList.remove('in')
+            $('hamburger-menu')[0].classList.add('out')
+        }
+        else if(!$('hamburger-menu')[0].classList.contains('in') && !$('hamburger-menu')[0].classList.contains('out')){
+            $('hamburger-menu')[0].classList.add('out')
+        }
+        else{
+            $('hamburger-menu')[0].classList.add('in')
+            $('hamburger-menu')[0].classList.remove('out')
+        }
+
+        $('#nav-menu')[0].classList.add('disabled')
+    }
+}
+if($('#nav-menu')[0] != null){
+$('#nav-menu')[0].onclick = function() {
+    handle_hamburger()
+}
+document.onclick = function(event){
+    if($('hamburger-menu')[0].classList.contains('out') && !event.target.classList.contains('hamburger-container') && !event.target.classList.contains('navp-container') && event.target != $('hamburger-menu')[0] && !event.target.classList.contains('navp')){
+        handle_hamburger()
+    }
+}
+}
+

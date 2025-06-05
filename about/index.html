@@ -4,21 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>about me</title>
-    <link rel="stylesheet" href="../style.css?v=4">
+    <link rel="stylesheet" href="../style.css?v=5">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="navigation">
-        <label class="row-center" for="themetoggle">
-            <svg id="themeicon" viewBox="0 0 24 24" fill="none" height="34px" width="28px"xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M3.32031 11.6835C3.32031 16.6541 7.34975 20.6835 12.3203 20.6835C16.1075 20.6835 19.3483 18.3443 20.6768 15.032C19.6402 15.4486 18.5059 15.6834 17.3203 15.6834C12.3497 15.6834 8.32031 11.654 8.32031 6.68342C8.32031 5.50338 8.55165 4.36259 8.96453 3.32996C5.65605 4.66028 3.32031 7.89912 3.32031 11.6835Z" stroke="#F0EDEA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+        <label for="nav-menu">
+            <hamburger id="nav-menu">
+                <svg viewBox="0 0 24 24" fill="none" width="20px" height="20px" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M20 7L4 7" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> <path d="M20 12L4 12" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> <path d="M20 17L4 17" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> </g></svg>
+            </hamburger>
         </label>
         <a href="/"class="navp">home</a>
         <a href="/about" class="navp active">about me</a>
-        <a href="/food" class="navp">food</a>
+        <a href="/music" class="navp">music</a>
+        <a href="/food" class="navp ">food</a>
+        <h2 id="mobile-nav-header"> about me</h2>
+        <label class="row-center" for="themetoggle">
+            <svg id="themeicon" viewBox="0 0 24 24" fill="none" height="34px" width="28px"xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M3.32031 11.6835C3.32031 16.6541 7.34975 20.6835 12.3203 20.6835C16.1075 20.6835 19.3483 18.3443 20.6768 15.032C19.6402 15.4486 18.5059 15.6834 17.3203 15.6834C12.3497 15.6834 8.32031 11.654 8.32031 6.68342C8.32031 5.50338 8.55165 4.36259 8.96453 3.32996C5.65605 4.66028 3.32031 7.89912 3.32031 11.6835Z" stroke="#F0EDEA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+        </label>
 
     </div>
+    <hamburger-menu>
+        <div class="col hamburger-container">
+            <div class="navp-container">
+                <a href="/"class="navp">home</a>
+            </div>
+            <div class="navp-container">
+                <a href="/about" class="navp active">about me</a>
+            </div>
+            <div class="navp-container">
+                <a href="/music" class="navp">music</a>
+            </div>
+
+            <div class="navp-container">
+                <a href="/food" class="navp">food</a>
+            </div>
+
+        </div>
+
+    </hamburger-menu>
 
     <div class="center">
 
@@ -40,7 +66,7 @@
                 </div>
             </div>
             <br>
-            <p>A short visual description: I have thick brown (sometimes long) hair, blue eyes, and I am 5'5.</p>
+            <p>A short visual description: I have thick brown (sometimes long) hair, blue eyes, and I am 5'5 (165cm).</p>
         </div>
         <div class="textbox">
             <h3>Origins, Past, and the Future</h3>
@@ -69,7 +95,6 @@
                 <p>After the pandemic I started getting bored of video games and decided to go outside for once. This is when I started listening to music, using social media, and ultimately became the person I am today.</p>
                 <p>Nowadays I listen to music every single day, and it has become an integral part of who I am. My two favorite artists of all time are MF Doom and TV Girl. Although I listen to a lot of indie so my most listened to songs don't tend to be sung by one particular person.</p>
                 <p>Besides music I started reading <secondary>books</secondary> on my own time as well, specifically fantasy and dystopian books, some of my favorites are the Lord of the Rings, the Kingkiller Chronicle, and Frankenstein.  </p>
-               <!-- <div id="embed-iframe"></div>--> 
             </div>
                 <br>
                  <h4 class="">Video Games</h4>

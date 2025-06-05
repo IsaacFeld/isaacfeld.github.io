@@ -11,30 +11,69 @@
 </head>
 <body>
     <div class="navigation">
-        <label class="row-center" for="themetoggle">
-            <svg id="themeicon" viewBox="0 0 24 24" fill="none" height="34px" width="28px"xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M3.32031 11.6835C3.32031 16.6541 7.34975 20.6835 12.3203 20.6835C16.1075 20.6835 19.3483 18.3443 20.6768 15.032C19.6402 15.4486 18.5059 15.6834 17.3203 15.6834C12.3497 15.6834 8.32031 11.654 8.32031 6.68342C8.32031 5.50338 8.55165 4.36259 8.96453 3.32996C5.65605 4.66028 3.32031 7.89912 3.32031 11.6835Z" stroke="#F0EDEA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+        <label for="nav-menu">
+            <hamburger id="nav-menu">
+                <svg viewBox="0 0 24 24" fill="none" width="20px" height="20px" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M20 7L4 7" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> <path d="M20 12L4 12" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> <path d="M20 17L4 17" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> </g></svg>
+            </hamburger>
         </label>
         <a href="/"class="navp">home</a>
         <a href="/about" class="navp">about me</a>
+        <a href="/music" class="navp">music</a>
         <a href="/food" class="navp active">food</a>
+        <h2 id="mobile-nav-header">food</h2>
+        <label class="row-center" for="themetoggle">
+            <svg id="themeicon" viewBox="0 0 24 24" fill="none" height="34px" width="28px"xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M3.32031 11.6835C3.32031 16.6541 7.34975 20.6835 12.3203 20.6835C16.1075 20.6835 19.3483 18.3443 20.6768 15.032C19.6402 15.4486 18.5059 15.6834 17.3203 15.6834C12.3497 15.6834 8.32031 11.654 8.32031 6.68342C8.32031 5.50338 8.55165 4.36259 8.96453 3.32996C5.65605 4.66028 3.32031 7.89912 3.32031 11.6835Z" stroke="#F0EDEA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+        </label>
+
     </div>
+    <hamburger-menu>
+        <div class="col hamburger-container">
+            <div class="navp-container">
+                <a href="/"class="navp">home</a>
+            </div>
+            <div class="navp-container">
+                <a href="/about" class="navp">about me</a>
+            </div>
+            <div class="navp-container">
+                <a href="/music" class="navp">music</a>
+            </div>
+            <div class="navp-container">
+                <a href="/food" class="navp active">food</a>
+            </div>
+
+        </div>
+
+    </hamburger-menu>
     <div class="center">
         <div class="textbox" style="padding-bottom: 0px; margin-top: 1em;">
-            <h3>Isaac's Food Blog</h3>
-            <p>Welcome to my food blog!  <br>Here you'll find food I have eaten at restaurants, food I have cooked, and maybe a recipe or two that I am willing to share :)
-            <br>Try searching for your favorite food!</p>
+            <h2>Isaac's Food Blog</h2>
+            <p>Welcome to my food blog!  
+                <br>Here you'll find food I have eaten at restaurants, my favorite recipes, 
+                and much much more!</p>
+            <p>You can search by blog title using the search bar below. 
+        <br>Use the tag buttons to filter your results!</p>
         </div>
-        <label for="food-search" class="textbox"style="padding-top: 0px; padding-bottom: 0px;">
-            <searchbox>
-                <div class="row-center searchbar" style="column-gap: 10px;">
-                    <search>
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M11 6C13.7614 6 16 8.23858 16 11M16.6588 16.6549L21 21M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
-                    </search>
-                    <input id="food-search" type="text" class="clean" autocomplete="off" >
-                </div>
-           
-            </searchbox>
-        </label>
+        <div class="searchbox-container textbox">
+            <label for="food-search" style="padding-top: 0px; padding-bottom: 0px;">
+                <searchbox>
+                    <div class="row-center searchbar" style="column-gap: 10px;">
+                        <search>
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M11 6C13.7614 6 16 8.23858 16 11M16.6588 16.6549L21 21M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                        </search>
+                        <input id="food-search" type="text" class="clean" autocomplete="off" >
+                    
+                    </div>
+        
+                </searchbox>
+                
+            </label>
+            <tag id="reset">reset tags</tag>
+        </div>
+
+            <tags id="insertSearchTags">
+
+            </tags>
+  
         <searchresult>
             <a href="/food/kai-maison">
                 <article>
