@@ -22,6 +22,7 @@
     --font-bigger: 1.25em;
     --font-biggest: 1.375em;
     --font-massive: 1.75em;
+    --font-signature: 1em;
     --purple-one: hsl(266, 79%, 81%);
     --purple-two: #9882d3;
     --purple-three: hsl(270, 46%, 50%);
@@ -272,7 +273,7 @@ footer {
 
 
 signature {
-    font-size: var(--font-normal);
+    font-size: var(--font-signature);
     color: var(--text-color);
     font-family: "Indie Flower", cursive;
 }
@@ -765,9 +766,17 @@ musiccontainer{
         --font-bigger: 1.125em;
         --font-biggest: 1.25em;
         --font-massive: 1.25em;
+        --font-signature: 0.5em;
+    }
+    #insertSearchTags{
+        display: none; 
+    }
+    #reset{
+       display: none;
     }
     #logo{
         height: 125px;
+        width: 125px;
         margin-top: 2em;
     }
     githubstats, #githubstats{
@@ -830,13 +839,14 @@ musiccontainer{
         height: 30px;
     }
     .ratingContainer tag{
-    padding: 4px;
+    padding: 3px;
     }
     tag{
         width: 60px;
         height: 20px;
         padding: 4px;
     }
+
     header h1{
         margin-left: 10px;
         margin-right: 5px;
