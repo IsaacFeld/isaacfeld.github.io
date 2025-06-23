@@ -280,7 +280,7 @@ function initChoices(){
 function switchToVideo(){
     imageView.classList.add('hidden')
     videoView.classList.remove('hidden')
-    videoView.setAttribute('src', `https://isaacf.me/images/${screenMediaIndex}_${screenMediaSubIndex}.mp4`)
+    videoView.setAttribute('src', `../images/${screenMediaIndex}_${screenMediaSubIndex}.mp4`)
 }
 function switchOffVideo(){
     videoView.classList.add('hidden')
@@ -375,7 +375,7 @@ function updateMedia(){
         switchToVideo()
     }
     else{
-        imageView.src = `https://isaacf.me/images/${screenMediaIndex}_${screenMediaSubIndex}.jpg`
+        imageView.src = `../images/${screenMediaIndex}_${screenMediaSubIndex}.jpg`
         switchOffVideo()
     }
 }
