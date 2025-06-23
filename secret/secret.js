@@ -515,19 +515,19 @@ document.onkeydown = function(event) {
     if(/^.$/u.test(event.key) && nextCounter == 3 && !canNext && !executingMatch || /^.$/u.test(event.key) && nextCounter == 5 && !canNext && !executingMatch || /^.$/u.test(event.key) && nextCounter == 7 && !canNext && !executingMatch){
         $('.input')[0].children[0].textContent += event.key
         if(nextCounter == 3){
-            if($('.input')[0].children[0].textContent.replace(/\s/g,'').toLowerCase() == 'tullyantoniacomfort' || $('.input')[0].children[0].textContent.replace(/\s/g,'').toLowerCase() == 'a'){
+            if($('.input')[0].children[0].textContent.replace(/\s/g,'').toLowerCase() == 'tullyantoniacomfort'){
                 match()
           
             }
         }
         else if(nextCounter == 5){
-            if($('.input')[0].children[0].textContent.replace(/\s/g,'').toLowerCase() == '20/02/2007' || $('.input')[0].children[0].textContent.replace(/\s/g,'').toLowerCase() == 'a'){
+            if($('.input')[0].children[0].textContent.replace(/\s/g,'').toLowerCase() == '20/02/2007' ){
                     match()
     
             } 
         }
         else if(nextCounter == 7){
-            if($('.input')[0].children[0].textContent.replace(/\s/g,'').toLowerCase() == `isaac'sbutt` || $('.input')[0].children[0].textContent.replace(/\s/g,'').toLowerCase() == `isaacsbutt` || $('.input')[0].children[0].textContent.replace(/\s/g,'').toLowerCase() == 'a'){
+            if($('.input')[0].children[0].textContent.replace(/\s/g,'').toLowerCase() == `isaac'sbutt` || $('.input')[0].children[0].textContent.replace(/\s/g,'').toLowerCase() == `isaacsbutt` ){
                 match()
             }
         }
