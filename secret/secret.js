@@ -375,7 +375,7 @@ function updateMedia(){
         switchToVideo()
     }
     else{
-        imageView.src = `https://github.com/IsaacFeld/isaacfeld.github.io/blob/main/images/${screenMediaIndex}_${screenMediaSubIndex}.jpg`
+        imageView.src = `https://github.com/IsaacFeld/isaacfeld.github.io/blob/main/images/${screenMediaIndex}_${screenMediaSubIndex}.jpg?raw=true`
         switchOffVideo()
     }
 }
