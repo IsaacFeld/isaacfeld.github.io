@@ -280,7 +280,7 @@ function initChoices(){
 function switchToVideo(){
     imageView.classList.add('hidden')
     videoView.classList.remove('hidden')
-    videoView.setAttribute('src', `../images/${screenMediaIndex}_${screenMediaSubIndex}.mp4`)
+    videoView.setAttribute('src', `https://github.com/IsaacFeld/isaacfeld.github.io/blob/main/images/${screenMediaIndex}_${screenMediaSubIndex}.mp4?raw=true`)
 }
 function switchOffVideo(){
     videoView.classList.add('hidden')
@@ -375,7 +375,7 @@ function updateMedia(){
         switchToVideo()
     }
     else{
-        imageView.src = `../images/${screenMediaIndex}_${screenMediaSubIndex}.jpg`
+        imageView.src = `https://github.com/IsaacFeld/isaacfeld.github.io/blob/main/images/${screenMediaIndex}_${screenMediaSubIndex}.jpg`
         switchOffVideo()
     }
 }
