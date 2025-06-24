@@ -223,6 +223,27 @@ setTimeout(() => {
 
 }, 2000)
 
+// CHECK IF IMAGE EXISTS
+function checkIfImageExists(url, callback) {
+  const img = new Image();
+  img.src = url;
+  
+  if (img.complete) {
+    callback(true);
+  } else {
+    img.onload = () => {
+      callback(true);
+    };
+    
+    img.onerror = () => {
+      callback(false);
+    };
+  }
+}
+
+
+
+
 function initChoices(){
        var chatChoice = document.createElement('div')
        chatChoice.classList.add('chatChoice')
@@ -375,8 +396,15 @@ function updateMedia(){
         switchToVideo()
     }
     else{
-        imageView.src = `https://github.com/IsaacFeld/isaacfeld.github.io/blob/main/images/${screenMediaIndex}_${screenMediaSubIndex}.jpg?raw=true`
-        switchOffVideo()
+    checkIfImageExists(`https://github.com/IsaacFeld/isaacfeld.github.io/blob/main/images/${screenMediaIndex}_${screenMediaSubIndex}.jpg?raw=true`, (exists) => {
+        if (exists) {
+            imageView.src = `https://github.com/IsaacFeld/isaacfeld.github.io/blob/main/images/${screenMediaIndex}_${screenMediaSubIndex}.jpg?raw=true`
+        } else {
+            imageView.src = `https://github.com/IsaacFeld/isaacfeld.github.io/blob/main/images/${screenMediaIndex}_${screenMediaSubIndex}.JPG?raw=true`
+
+        }
+    });
+    switchOffVideo()
     }
 }
 
