@@ -73,3 +73,15 @@ document.onclick = function(event){
 }
 }
 
+/* GSAP ANIMATIONS */
+gsap.registerPlugin(SplitText)
+let welcome = SplitText.create('#welcome', {type: 'words, chars'})
+
+gsap.from(welcome.chars, {
+    duration: 1,
+    x: -20, 
+    autoAlpha: 0.05,
+    stagger: 0.05,
+})
+
+
