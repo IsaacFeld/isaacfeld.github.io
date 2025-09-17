@@ -1049,6 +1049,22 @@ musiccontainer{
     tags tag {
         transition: background-color 0.2s ease-in;
     }
+    #specialAnchor{
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        background-color: #741c2b;
+        width: fit-content;
+        padding: 8px 16px;
+        border-radius: 50%;
+        border: 2px solid #2a3c2a;
+        font-size: var(--font-normal)
+    }
+
+    #spinAnchor{
+        padding: 20px 20px;
+    }
+
 }
 @keyframes slide-out{
     0%{
