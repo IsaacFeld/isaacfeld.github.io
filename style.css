@@ -113,7 +113,8 @@ yellow {
 * {
     box-sizing: border-box;
     user-select: none;
-    font-family: "Inter", sans-serif
+    font-family: "Inter", sans-serif;
+    transition: background-color 0.25s ease-in;
 }
 
 h1,
@@ -143,6 +144,7 @@ body {
     margin: 0px;
     height: 100%;
     background-color: var(--bg-color);
+    
 }
 
 /* Navigation */
@@ -554,9 +556,7 @@ search path {
     stroke: var(--text-color)
 }
 
-search:hover path {
 
-}
 tags{
     display: flex;
     flex-direction: row;

@@ -1,0 +1,29 @@
+gallery{
+
+}
+
+galleryrow{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 2em;
+    row-gap: 1em;
+    column-gap: 1em;
+}
+
+galleryrow img{
+    padding: 0.5em;
+    align-self: center;
+    image-rendering: pixelated;
+    width: 128px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+@media only screen and (max-width: 600px) {
+    galleryrow{
+        grid-template-columns: auto auto;
+        padding: 0.5em;
+        margin-bottom: 0.5em;
+        margin-top: 0.5em;
+    }
+}
