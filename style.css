@@ -795,13 +795,20 @@ musiccontainer{
 @media only screen and (max-width: 600px) {
     :root {
         --font-smallest: 0.45em;
-        --font-small: 0.5em;
+        --font-small: 0.8em;
         --font-normal: 0.875em;
         --font-big: 1em;
         --font-bigger: 1.125em;
         --font-biggest: 1.25em;
-        --font-massive: 1.25em;
+        --font-massive: 1.5em;
         --font-signature: 0.5em;
+    }
+
+    .textseparator {
+        padding-left: 1em;
+        padding-right: 1em;
+        padding-bottom: 1em;
+        transition: padding 0.5s ease-in-out;
     }
     #insertSearchTags{
         display: none; 
@@ -877,8 +884,9 @@ musiccontainer{
     padding: 3px;
     }
     tag{
-        width: 60px;
-        height: 20px;
+        font-size: var(--font-small);
+        min-width: 60px;
+        height: 26px;
         padding: 4px;
     }
 
@@ -1017,7 +1025,7 @@ musiccontainer{
 
     .center {
         align-items: center;
-        width: 70%;
+        width: 85%;
     }
 
     .imageHolder.one {
@@ -1029,7 +1037,7 @@ musiccontainer{
     }
 
     .gameList.in {
-        height: 900px;
+        height: 1200px;
     }
 
     .game p {
