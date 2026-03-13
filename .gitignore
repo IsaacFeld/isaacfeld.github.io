@@ -1,1 +1,7 @@
 .DS_STORE
+.vite
+.vscode
+package.json
+package-lock.json
+vite.config.js
+node_modules
