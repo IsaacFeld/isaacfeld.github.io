@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/style.css?v=neo" />
+        <script>
+            var d = document.documentElement;
+            var theme = localStorage.getItem("theme");
+            if (theme == "light") {
+                d.classList.add("lightmode");
+            } else if (theme == "dark") {
+                d.classList.remove("lightmode");
+            }
+        </script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <title>food blog - l'industrie pizza</title>
+    </head>
+    <body>
+        <foodpage>
+            <header>
+                <div class="row-center between">
+                    <a href="/food/" class="back">
+                        <svg
+                            viewBox="0 0 512 512"
+                            version="1.1"
+                            xml:space="preserve"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            fill="#000000"
+                        >
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g
+                                id="SVGRepo_tracerCarrier"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            ></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <style type="text/css">
+                                    .st0 {
+                                        fill: #333333;
+                                    }
+                                </style>
+                                <g id="Layer_1"></g>
+                                <g id="Layer_2">
+                                    <g>
+                                        <path
+                                            class="st0"
+                                            d="M217,129.88c-6.25-6.25-16.38-6.25-22.63,0L79.61,244.64c-0.39,0.39-0.76,0.8-1.11,1.23 c-0.11,0.13-0.2,0.27-0.31,0.41c-0.21,0.28-0.42,0.55-0.62,0.84c-0.14,0.21-0.26,0.43-0.39,0.64c-0.14,0.23-0.28,0.46-0.41,0.7 c-0.13,0.24-0.24,0.48-0.35,0.73c-0.11,0.23-0.22,0.45-0.32,0.68c-0.11,0.26-0.19,0.52-0.28,0.78c-0.08,0.23-0.17,0.46-0.24,0.69 c-0.09,0.29-0.15,0.58-0.22,0.86c-0.05,0.22-0.11,0.43-0.16,0.65c-0.08,0.38-0.13,0.76-0.17,1.14c-0.02,0.14-0.04,0.27-0.06,0.41 c-0.11,1.07-0.11,2.15,0,3.22c0.01,0.06,0.02,0.12,0.03,0.18c0.05,0.46,0.12,0.92,0.21,1.37c0.03,0.13,0.07,0.26,0.1,0.39 c0.09,0.38,0.18,0.76,0.29,1.13c0.04,0.13,0.09,0.26,0.14,0.4c0.12,0.36,0.25,0.73,0.4,1.09c0.05,0.11,0.1,0.21,0.15,0.32 c0.17,0.37,0.34,0.74,0.53,1.1c0.04,0.07,0.09,0.14,0.13,0.21c0.21,0.38,0.44,0.76,0.68,1.13c0.02,0.03,0.04,0.06,0.06,0.09 c0.55,0.81,1.18,1.58,1.89,2.29l114.81,114.81c3.12,3.12,7.22,4.69,11.31,4.69s8.19-1.56,11.31-4.69c6.25-6.25,6.25-16.38,0-22.63 l-87.5-87.5h291.62c8.84,0,16-7.16,16-16s-7.16-16-16-16H129.51L217,152.5C223.25,146.26,223.25,136.13,217,129.88z"
+                                        ></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                    <h1>Isaac's Food Blog - A review of L'Industrie Pizza</h1>
+                    <label class="row-center" for="themetoggle">
+                        <svg
+                            id="themeicon"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            height="34px"
+                            width="28px"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g
+                                id="SVGRepo_tracerCarrier"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            ></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path
+                                    d="M3.32031 11.6835C3.32031 16.6541 7.34975 20.6835 12.3203 20.6835C16.1075 20.6835 19.3483 18.3443 20.6768 15.032C19.6402 15.4486 18.5059 15.6834 17.3203 15.6834C12.3497 15.6834 8.32031 11.654 8.32031 6.68342C8.32031 5.50338 8.55165 4.36259 8.96453 3.32996C5.65605 4.66028 3.32031 7.89912 3.32031 11.6835Z"
+                                    stroke="#F0EDEA"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                ></path>
+                            </g>
+                        </svg>
+                    </label>
+                </div>
+            </header>
+            <div class="center">
+                <div class="textbox">
+                    <div class="row-start between reviewDataContainer sticky">
+                        <h3 style="margin-bottom: 0.5em; align-self: end">
+                            Unforgettable Pizza
+                        </h3>
+                        <div class="row-center ratingContainer">
+                            <div class="col">
+                                <p>Service</p>
+                                <tag>4.5 ⭐</tag>
+                            </div>
+                            <div class="col">
+                                <p>Food</p>
+                                <tag>5.0 ⭐</tag>
+                            </div>
+                            <div class="col">
+                                <p>Atmosphere</p>
+                                <tag>4.5 ⭐</tag>
+                            </div>
+                        </div>
+                        <div
+                            class="row-center tagContainer"
+                            style="margin-bottom: 0px; height: 60px"
+                        >
+                            <tag>take-out</tag>
+                            <tag>pizza</tag>
+                            <tag>american</tag>
+                        </div>
+                    </div>
+                    <p>
+                        The first time I tried out L'Industrie Pizza was in 2023, and since then this place has really blown up in terms of popularity.
+                        Despite all this, when I returned to try out their pizza 3 years later in 2026 I could taste no difference in quality. Against all odds L'Industrie has managed to preserve
+                        a darn good slice while expanding, and serving multitudes more customers than they used to. This is no easy feat, as I've seen many restaurants falter over the years as the greed of expansion would get to their heads causing the overall food quality to sink.
+                    </p>
+                    <div class="row-center justCent" style="margin-top: 1em; margin-bottom: 1em">
+                                <img class="image"   src="../../images/lindustrie-1.jpeg" />
+                    </div>
+                    
+                    <p> 
+                        Above this paragraph you'll find a picture of the most delicious pie of pizza I have tasted in America. 
+                        This pizza comes with tomato sauce, fresh mozarella, dollops of burrata cheese, and a crisp crust. 
+                        The burrata is really the icing on the cake, it adds a great deal of flavor to the pizza. 
+                        This is L'Industrie's signature slice, and I highly recommend you try it out while you're there.
+                        In my opinion the best part about L'Industrie is their dough. It seems they sprinkle in some sourdough starter to give it that addictive
+                        sour taste, and it's so thin and crispy that you really can't help but take slice after slice. If you're interested in how L'Industrie makes their pizza you can watch this awesome youtube video about it <a>here</a>.
+                    </p>
+                    <p>
+                        We went to L'Industrie on a Saturday evening for dinner, and despite coming at quite a peak time the line moved quick. The overall wait was ~45 minutes, but the pizza easily made up for the wait. Upon reaching the door to the establishment you'll find two
+                        promising plaques displayed in the doorway. Stacked on top of each other, like trophies, they claim that L'Industrie won 1st place for the Top 50 Pizza Slices in the USA twice in a row, namely in 2024 and 2025. Inside you'll find a busy open kitchen preparing pizza after pizza, 
+                        and plenty of places to stand and eat your slice if take-out isn't your fancy. Clcik <a href="https://www.lindustriebk.com/" target="_blank">here</a> to get to their website.
+                    </p>
+                </div>
+            </div>
+        </foodpage>
+        <hidden class="buttons">
+            <button id="themetoggle"></button>
+        </hidden>
+        <script src="../../jquery.js"></script>
+        <script type="module" src="../../main.js?v=neo"></script>
+    </body>
+</html>
